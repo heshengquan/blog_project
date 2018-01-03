@@ -12,7 +12,7 @@ def index(request):
 
     return render(request,"blog/index.html",content)
 
-# 博客详情页
+# 博客详情页a
 def detail(request,id):
     post=get_object_or_404(Post,id=id)
     content={"post":post}
